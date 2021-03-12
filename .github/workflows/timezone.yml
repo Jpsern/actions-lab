@@ -21,5 +21,5 @@ jobs:
       - name: Print date
         run: |
           echo $TZ
-          echo $(date '+%Y-%m-%d %H:%M:%S')
+          echo $(date '+%Y-%m-%d %H:%M:%S(%z)')
           echo $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S')
