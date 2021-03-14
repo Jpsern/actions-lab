@@ -3,6 +3,8 @@
 name: Test CI
 
 on:
+  schedule:
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,9 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Run a multi-line script
+      # Runs a set of commands using the runners shell
+      - name: Print date
         run: |
-          pwd -P
-          sh ./scripts/tz.sh
+          echo $(date '+%Y-%m-%d %H:%M:%S(%z)')
+          echo $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S(%z)')
