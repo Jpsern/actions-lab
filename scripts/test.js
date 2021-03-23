@@ -1,3 +1,3 @@
 // 外から渡す
-const fuga = ${hoge};
+const fuga = process.env.hoge;
 console.log(fuga);
