@@ -1,3 +1,3 @@
 // 外から渡す
-const fuga = hoge;
+const fuga = ${hoge};
 console.log(fuga);
