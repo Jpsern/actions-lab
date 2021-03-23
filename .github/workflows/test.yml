@@ -28,5 +28,5 @@ jobs:
       # 実行テスト
       - name: Print by js
         run: node scripts/test.js
-        with:
+        env:
           hoge: 'ほげ'
