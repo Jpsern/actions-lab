@@ -3,7 +3,7 @@ name: Timezone CI
 
 # Controls when the action will run. 
 on:
-  schedule:
+  # schedule:
     # 朝9時に実行する
     # - cron: "0 0 * * *"
   # Allows you to run this workflow manually from the Actions tab
