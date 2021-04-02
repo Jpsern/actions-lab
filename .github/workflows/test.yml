@@ -18,6 +18,10 @@ jobs:
       
       - name: Checkout repository
         uses: actions/checkout@v2
+      
+      # SSHログイン用設定
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
 
       # テスト用のjs環境
       - name: Setup node
