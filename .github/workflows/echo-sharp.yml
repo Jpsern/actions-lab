@@ -1,6 +1,9 @@
 name: Echo Sharp CI
 
 on:
+  pull_request:
+    branches:
+      test/echo-sharp
   workflow_dispatch:
 
 jobs:
