@@ -1,0 +1,15 @@
+name: Echo Sharp CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Runs a set of commands using the runners shell
+      - name: Echo
+        run: |
+          echo \#
+          
