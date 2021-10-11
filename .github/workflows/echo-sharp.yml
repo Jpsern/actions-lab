@@ -1,7 +1,7 @@
 name: Echo Sharp CI
 
 on:
-  pull_request:
+  push:
     branches:
       test/echo-sharp
   workflow_dispatch:
